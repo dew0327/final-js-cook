@@ -66,11 +66,11 @@ phases:
               app: $_PROJECT_NAME
           spec:
             replicas: 5
-            minReadySeconds: 10
+            minReadySeconds: 180
             strategy:
               type: RollingUpdate
               rollingUpdate:
-                maxSurge: 1
+                maxSurge: 2
                 maxUnavailable: 0
             selector:
               matchLabels:
