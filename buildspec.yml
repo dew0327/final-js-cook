@@ -65,7 +65,7 @@ phases:
             labels:
               app: $IMAGE_REPO_NAME
           spec:
-            replicas: 5
+            replicas: 1
             minReadySeconds: 180
             strategy:
               type: RollingUpdate
